@@ -1,0 +1,30 @@
+
+.home-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 16px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1976d2;
+  font-size: 1.2em;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #004ba0;
+}

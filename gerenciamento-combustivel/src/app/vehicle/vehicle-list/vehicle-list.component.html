@@ -1,0 +1,35 @@
+<div style="max-width: 800px; margin: 48px auto; padding: 32px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+  <h2 style="margin-bottom: 24px;">Lista de Veículos</h2>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z2" style="width: 100%;">
+    <ng-container matColumnDef="nome">
+      <th mat-header-cell *matHeaderCellDef>Nome</th>
+      <td mat-cell *matCellDef="let element">{{element.nome}}</td>
+    </ng-container>
+    <ng-container matColumnDef="placa">
+      <th mat-header-cell *matHeaderCellDef>Placa</th>
+      <td mat-cell *matCellDef="let element">{{element.placa}}</td>
+    </ng-container>
+    <ng-container matColumnDef="vinculo">
+      <th mat-header-cell *matHeaderCellDef>Vínculo</th>
+      <td mat-cell *matCellDef="let element">{{element.vinculo}}</td>
+    </ng-container>
+    <ng-container matColumnDef="vinculoDescricao">
+      <th mat-header-cell *matHeaderCellDef>Descrição do Vínculo</th>
+      <td mat-cell *matCellDef="let element">{{element.vinculoDescricao}}</td>
+    </ng-container>
+    <ng-container matColumnDef="tipoCombustivel">
+      <th mat-header-cell *matHeaderCellDef>Combustível</th>
+      <td mat-cell *matCellDef="let element">{{element.tipoCombustivel}}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="['nome', 'placa', 'vinculo', 'vinculoDescricao', 'tipoCombustivel']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['nome', 'placa', 'vinculo', 'vinculoDescricao', 'tipoCombustivel'];"></tr>
+  </table>
+  <ng-container matColumnDef="acoes">
+    <th mat-header-cell *matHeaderCellDef>Ações</th>
+    <td mat-cell *matCellDef="let row">
+    </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns.concat(['acoes'])"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns.concat(['acoes']);"></tr>
+  <button mat-stroked-button color="primary" routerLink="/vehicle/form" style="margin-top: 16px;">Novo veículo</button>
+</div>

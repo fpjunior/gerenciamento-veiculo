@@ -1,0 +1,76 @@
+<div style="max-width: 480px; margin: 48px auto; padding: 32px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+  <h2 style="margin-bottom: 24px;">Cadastro de Viagem/Abastecimento</h2>
+  <form>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Roteiro</mat-label>
+      <input matInput placeholder="Roteiro">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Data da viagem</mat-label>
+      <input matInput type="date">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Hora de saída</mat-label>
+      <input matInput type="time">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>KM saída</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Hora de chegada</mat-label>
+      <input matInput type="time">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>KM chegada</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>KM rodados</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>KM bomba</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Combustível</mat-label>
+      <mat-select>
+        <mat-option value="Diesel">Diesel</mat-option>
+        <mat-option value="Gasolina">Gasolina</mat-option>
+        <mat-option value="Etanol">Etanol</mat-option>
+        <mat-option value="Flex">Flex</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Litros geral</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>R$ L diesel</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Valor total</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Média</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Motorista</mat-label>
+      <input matInput placeholder="Nome do motorista">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Cupom</mat-label>
+      <input matInput placeholder="Cupom">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Destino</mat-label>
+      <input matInput placeholder="Destino">
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Salvar</button>
+  </form>
+</div>
+<p>trip-form works!</p>

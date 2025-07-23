@@ -1,0 +1,32 @@
+<div style="max-width: 480px; margin: 48px auto; padding: 32px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+  <h2 style="margin-bottom: 24px;">Cadastro de Veículo</h2>
+  <form (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Nome do veículo" [(ngModel)]="nome" name="nome">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Placa</mat-label>
+      <input matInput placeholder="Placa" [(ngModel)]="placa" name="placa">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Vínculo</mat-label>
+      <input matInput placeholder="Vínculo" [(ngModel)]="vinculo" name="vinculo">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Vínculo Descrição</mat-label>
+      <input matInput placeholder="Descrição do vínculo" [(ngModel)]="vinculoDescricao" name="vinculoDescricao">
+    </mat-form-field>
+    <mat-form-field appearance="outline" style="width: 100%; margin-bottom: 16px;">
+      <mat-label>Tipo de Combustível</mat-label>
+      <mat-select [(ngModel)]="tipoCombustivel" name="tipoCombustivel">
+        <mat-option value="Flex">Flex</mat-option>
+        <mat-option value="Gasolina">Gasolina</mat-option>
+        <mat-option value="Diesel">Diesel</mat-option>
+        <mat-option value="Etanol">Etanol</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Salvar</button>
+    <button mat-stroked-button color="accent" routerLink="/vehicle/list" style="margin-top: 16px;">Ver lista de veículos</button>
+  </form>
+</div>
