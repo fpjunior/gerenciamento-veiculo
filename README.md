@@ -38,18 +38,26 @@ Este projeto é uma aplicação completa para gerenciamento de utilização e ab
    ```
 3. Acesse `http://localhost:4200`
 
+
 ## Banco de Dados
 - PostgreSQL 16
-- Porta padrão: 5433
+- Porta padrão deste projeto: 5434
 - Usuário: `user`
 - Senha: `password`
 - Banco: `gerenciamento_combustivel`
 
 ## Docker
-Exemplo de uso do Docker para o banco:
-```yaml
-docker-compose.yml
+Este projeto pode ser executado em containers Docker, sem conflito com outros projetos:
+
+- O banco roda no container `postgres16_veiculo` na porta `5434` (volume exclusivo `pgdata_veiculo`).
+- O backend roda no container `gerenciamento-backend-veiculo` na porta `3001`.
+
+Para subir tudo:
+```powershell
+docker compose up -d
 ```
+
+Se já houver outro projeto rodando containers de banco/backend, basta garantir que os nomes e portas são diferentes (como configurado neste projeto).
 
 ## Autor
 - [fpjunior](https://github.com/fpjunior)
